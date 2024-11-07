@@ -6,7 +6,7 @@
 #    By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 18:09:33 by wdegraf           #+#    #+#              #
-#    Updated: 2024/11/07 20:43:45 by wdegraf          ###   ########.fr        #
+#    Updated: 2024/11/07 20:55:36 by wdegraf          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ CPPFLAGS := -std=c++17 -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(SRC) $(HEADS)
-	CC $(CPPFLAGS) $(SRC) -o $(NAME)
+	@$(CC) $(CPPFLAGS) $(SRC) -o $(NAME)
 
 -include $(SRC:.cpp=.d)
 
@@ -29,7 +29,7 @@ $(NAME): $(SRC) $(HEADS)
 	@$(CC) $(CPPFLAGS) -MM $< > $@
 
 %.o: %.cpp
-	$(CC) $(CPPFLAGS) -c $< -o $@
+	@$(CC) $(CPPFLAGS) -c $< -o $@
 
 run: all
 	./$(NAME)
