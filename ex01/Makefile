@@ -6,11 +6,11 @@
 #    By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 18:09:33 by wdegraf           #+#    #+#              #
-#    Updated: 2024/11/07 20:57:59 by wdegraf          ###   ########.fr        #
+#    Updated: 2024/11/07 21:00:07 by wdegraf          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := awesome
+NAME := phonebook
 
 SRC := $(wildcard *.cpp)
 HEADS := $(wildcard *.hpp)
