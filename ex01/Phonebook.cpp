@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 21:00:38 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/09 10:16:57 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/09 17:13:29 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,12 @@ void	PhoneBook::addContact(const Contact &contact)
 	}
 }
 
+/// @brief formString function that returns a substring of the string.
+/// if the string is longer than 10 characters, it returns the first 9 characters
+/// followed by a period. Otherwise, it returns the string as is.
+/// .length() or .size() are functions that returns the number of 
+/// @param str the string to format.
+/// @return the formatted string.
 std::string formString(const std::string &str)
 {
 	if (str.length() > 10)
@@ -56,7 +62,6 @@ std::string formString(const std::string &str)
 /// @brief Displays the details of a contact in the PhoneBook.
 /// std::setw() is a function that sets the width of the next input/output field.
 /// .substr() is a function that returns a substring of the string.
-/// .length() or .size() are functions that returns the number of 
 /// elements in the array.. i take length because its a string and not a vector.
 void	PhoneBook::showContacts() const
 {
@@ -91,4 +96,3 @@ void	PhoneBook::displayDetails(int i) const
 		std::cout << "Phone Number: " << contact.getPhoneNumber() << std::endl;
 		std::cout << "Darkest Secret: " << contact.getDarkestSecret() << std::endl;
 	}
-}
