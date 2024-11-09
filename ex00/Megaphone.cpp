@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*   Megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 19:20:21 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/07 20:27:17 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/08 12:41:20 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 /// cout is an object of the iostream class, which is used to output data.
 /// cin is an object of the iostream class, which is used to read input data.
 /// endl is an object of the iostream class, which is used to insert a new line.
-/// std::toupper is a function that converts a character to uppercase.
-/// static_cast is a keyword that performs a non-conversion type cast in a
+/// toupper is a function that converts a character to uppercase.
+/// static_cast<type> is a keyword that performs a non-conversion type cast in a
 /// type-safe way.. Its prefered comparsed to (type) because it is more explicit.
-/// the type has to be in <type> because toupper returns an int.
+/// the type has to be in <char> because toupper returns an int.
 /// @param argc Argument count
 /// @param argv Argument vector
 /// @return 0 on success
