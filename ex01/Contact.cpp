@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 12:35:15 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/08 13:47:25 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/08 21:40:42 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ std::string	Contact::getDarkestSecret() const
 // #include <iostream>
 
 /// @brief main tests the class Contact.
-// int	main()
+// int	main(void)
 // {
 // 	Contact contact;
 // 	contact.setDetails("Wolfgang", "Cockies", "Amadeus", "123456789", "I like trains.");
