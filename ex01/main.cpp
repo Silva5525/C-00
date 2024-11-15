@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 10:15:18 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/09 10:26:31 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/15 15:22:17 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ std::string	getNonEmptyInput(const std::string &prompt)
 /// @brief Checks if a string is a number.
 /// @param str string to check.
 /// @return true if the string is a number, false otherwise.
+/// @brief Whats new C++? .isdigit() is a function that returns true if the character is a digit.
 bool	isNumber(const std::string &str)
 {
 	for (size_t i = 0; i < str.length(); i++)
@@ -65,6 +66,8 @@ void	doADD(PhoneBook &phonebook)
 
 /// @brief handles the search command.
 /// @param phonebook the phonebook to search in.
+/// @brief Whats new C++? std::cin.ignore() is a function that clears the input buffer.
+/// std::cin.clear() is a function that clears the error state of the input buffer.
 void	doSearch(const PhoneBook &phonebook)
 {
 	int i = 0;
@@ -86,7 +89,14 @@ void	doSearch(const PhoneBook &phonebook)
 
 /// @brief Displays the details of a contact in the PhoneBook.
 /// @brief Whats new C++? all C++98
+/// .empty() is a function that returns true if the string is empty.
+/// .isdigit() is a function that returns true if the character is a digit.
+/// .length() or .size() are functions that returns the number of 
+/// elements in the array.. i take length because its a string and not a vector.
+/// .substr() is a function that returns a substring of the string in this case 0 to 9.
+/// more will be cut off and replaced with a point.
 /// std::cin.ignore() is a function that clears the input buffer. 
+/// std::cin.clear() is a function that clears the error state of the input buffer.
 /// std::getline() is a function that reads a line from an input stream and
 /// stores it in a string.
 /// std::string is a class that represents a sequence of characters.

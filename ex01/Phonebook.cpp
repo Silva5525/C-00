@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 21:00:38 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/15 14:43:15 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/15 15:23:30 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,11 @@ void	PhoneBook::addContact(const Contact &contact)
 /// @brief formString function that returns a substring of the string.
 /// if the string is longer than 10 characters, it returns the first 9 characters
 /// followed by a period. Otherwise, it returns the string as is.
+/// @brief Whats new C++?
 /// .length() or .size() are functions that returns the number of 
+/// elements in the array.. i take length because its a string and not a vector.
+/// .substr() is a function that returns a substring of the string in this case 0 to 9.
+/// more will be cut off and replaced with a point.
 /// @param str the string to format.
 /// @return the formatted string.
 std::string formString(const std::string &str)
@@ -60,8 +64,8 @@ std::string formString(const std::string &str)
 }
 
 /// @brief Displays the details of a contact in the PhoneBook.
+/// @brief Whats new C++?
 /// std::setw() is a function that sets the width of the next input/output field.
-/// .substr() is a function that returns a substring of the string.
 /// elements in the array.. i take length because its a string and not a vector.
 void	PhoneBook::showContacts() const
 {
