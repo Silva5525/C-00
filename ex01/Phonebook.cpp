@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 21:00:38 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/09 17:13:29 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/15 14:43:15 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,3 +96,4 @@ void	PhoneBook::displayDetails(int i) const
 		std::cout << "Phone Number: " << contact.getPhoneNumber() << std::endl;
 		std::cout << "Darkest Secret: " << contact.getDarkestSecret() << std::endl;
 	}
+}
